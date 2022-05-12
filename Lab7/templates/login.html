@@ -1,0 +1,38 @@
+<!-- This is the login.html webpage/route used for the creation of the login form which will allows a 
+new user or existing user to then access the full content of the website. -->
+{% extends "foundation.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+
+<img src="/static/images/learn_about_europe.jpg" alt="Picture of Europe" 
+ width="730" height="560" align="right">
+<!--
+    This section will be used for designing the login form
+-->
+<div class="container"> 
+<body style="background-color:aquamarine">
+    <h1>Login</h1>
+
+    <form action="#" method="post">
+        <!-- Used for the creation of the Username label. -->
+        <p><label for="username">Username:</label></p>
+        <p><input style="height:30px;font-size:14pt;" type="text" name="username"
+        align="right"></p>
+        <!-- Used for the creation of the Password label. -->
+        <p><label for="password">Password:</label></p>
+        <p><input style="height:30px;font-size:14pt;" type="password" name="password"
+        align="right"></p>
+        <!-- Used for the creation of the Submit label. -->
+        <p><input style="height:30px;font-size:14pt;" type="submit" class="submit" value="Submit"></p>
+
+    </form>
+    <a href={{ url_for("registration") }}>Register here Today!</a>
+</body>
+</div>
+
+{% endblock %}

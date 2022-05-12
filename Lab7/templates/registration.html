@@ -1,0 +1,40 @@
+<!-- This is the register.html route/webpage which will be used for the registration form to allow
+new users to have access to the content that follows on the other routes. -->
+{% extends "foundation.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<img src="/static/images/european_made_cars.jpg" alt="Picture of famous European Car Brands" 
+ width="500" height="400" align="right">
+
+<!-- This section is used for the creation of the registration form. -->
+<div class="container">
+    <h1>Register for complete Access!</h1>
+    <form action="#" method="post">
+        <p><label for="username">Username:</label></p>
+        <p><input style="height:30px;font-size:14pt;" type="text" name="username"></p>
+        <p>The username must not contain any spaces.</p>
+
+        <p><label for="password">Password:</label></p>
+        <p><input style="height:30px;font-size:14pt;" type="password" name="password"></p>
+        
+        <!-- This is used for explicitly stating the password complexity requirements for a new
+        user trying to register to have full access to the content on the other accompanying routes/
+        webpages. -->
+        <p>
+            <br>The password must be at least 12 characters in length</br>
+            <br>The password must include at least 1 uppercase character</br>
+            <br>The password must include at least 1 lowercase character</br>
+            <br>The password must include at least 1 number</br>
+            <br>The password must include at least 1 special character</br>
+        </p>
+        <!-- Used in the creation for the Submit button on the registration form. -->
+        <p><input type="submit" class="submit" value="Submit"></p>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+<!-- This is the index.html webpage/route which is the main access of the overall content, and the 
+new or existing user has to go through this route/webpage first to have access to other routes. -->
+{% extends "foundation.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<!-- This is used for the creation of the logout button. -->
+<a href={{ url_for("logout") }}> Logout </a>
+    <!-- Looping to display the current date and time on the webpage. -->
+    {% for y in content %}
+    <h3 style="text-align:right"> Current Timestamp: {{ y }}</h3>
+    {% endfor %}
+    <header>
+      <nav>
+        <ul>
+          <a class="button" href="/">Home</a>
+          <a class="button" href="France">France</a>
+          <a class="button" href="Spain">Spain</a>
+          <a class="button" href="Germany">Germany</a>
+        </ul>
+      </nav>
+    </header>
+   <!--This is the main header of the index webpage and below is a paragraph introducing the 
+    content that will be produced by summarizing it all up. -->
+   <div class="header">
+     <!-- Adding an image of the Eiffel Tower in France GIF Image -->
+    <img src="/static/images/france_eiffel.gif" alt="Touring France!" 
+     width="500" height="350" align="left">
+      <img src="/static/images/travelling.gif" alt="I love travelling to different places" 
+       width="500" height="350" align="right">
+     <h1> An informational website about the different countries I would love to travel and explore! </h1>
+     <p> This is a <b>user responsive</b> website about different countries created by Herman Mann.</p>
+     <p>
+       I have always loved traveling around different places in the United States, but have never gotten
+       a chance to travel to any european countries but I have been having the long desire to do so. I want
+       to travel to these countries as described on this website Germany, Spain, and France 
+       and taking 1-2 years to finish traveling so I can explore each of these countries in great
+       exploration. 
+     </p>
+     <!-- This is used to incorporate the table.html webpage/route into the index.html webpage. -->
+     <h2><a href={{ url_for("table") }}>A table describing the current NBA (National Basketball Association) Playoffs along that, listing the
+       famous teams who made the playoffs in the past and also the names of the famous NBA athletes.
+     </a></h2>
+     <p>
+       This table will be representing the current NBA teams in the playoffs as of right now and also list the top famous teams
+       who made the playoffs in the past, and will list a few names of famous NBA Athletes throughout the time in the NBA. 
+     </p>
+   </div>
+
+   {% endblock %}

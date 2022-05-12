@@ -1,0 +1,33 @@
+<!-- This is the foundation.html webpage which contains the css stylesheet and important flash
+messages needed for the other routes and webpages -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<!-- This section will be used by the other webpages/routes to produce their flash messages which are
+important based upon their environment such as login.html and Registration.html-->
+<div class="flash_area_messages">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class=flash_count>
+        {% for status_message in messages %}
+        {{ status_message }}
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+</div>
+
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>
