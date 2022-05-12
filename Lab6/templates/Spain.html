@@ -1,0 +1,84 @@
+<!-- This is the Spain.html webpage which will be used for displaying the content and information
+  about the country of Spain. -->
+<div class="container">
+ <style>
+    div {
+        background-color: orange;
+    }
+ </style>
+ <!-- This will be used for diplaying the images of the Spain FLag and along that the picture of 
+   the country of Spain. -->
+    <h1> <img src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2018/04/Toledo-Spain-www.istockphoto.com_gb_photo_toledo-spain-gm464975554-58756952-SeanPavonePhoto.jpg"
+          alt="Picture of Spain" width="400" height="200">
+          <img src="https://as2.ftcdn.net/v2/jpg/02/08/69/21/1000_F_208692162_JW3VTVwVjMTaUQL2z77hn3f3O8Q8lpgv.jpg"
+          alt="Welcome to Spain Page" align="bottom" width="430" height="200">
+          <img src="https://lp-cms-production.imgix.net/2020-11/shutterstock_478551004.jpg"
+          alt="Flag picture of Spain" align="right" width="400" height="200">
+          <br>SPAIN</br>
+    </h1>
+    <!-- This section within the page will be used for defining the three top cities to explore
+      in Spain. ALong with that adding links to find the images of the three top cities to explore. -->
+    <header>
+       <h2> The top 3 cities to visit and explore with friends or family in Spain! </h2>
+          <ol>
+              <li><a href= {{ url_for('static', filename='images/barcelona_spain.jpg') }}>
+                  Barcelona
+              </a></li>
+              <li><a href= {{ url_for('static', filename='images/selville_spain.jpg') }}>
+                  Seville
+              </a></li>
+              <li><a href= {{ url_for('static', filename='images/madrid_spain.jpg') }}>
+                  Madrid
+              </a></li>
+          </ol>
+    <!-- This section will be designed to display the information of the Spain country. -->
+    </header>
+    <h2> Some information about the country of Spain! </h2>
+    <p>
+        The country of Spain is filled of castles, snowcapped mountains, and sophisticated cities,
+        and much more. It is made a favoured travel destination for most travelers and explorers. Spain
+        has a Parliamentary monarchy form of government. Spain occupies the area of most of the 
+        Iberian Peninsula and stretching south from the Pyrenees Mountains to the Strait of Gibraltar, which
+        overall separates Spain from Africa. Spain is bordered to the west by Portugal; to the northeast
+        it borders France. 
+    </p>
+    <!-- Adding links to external websites to learn more about the country of Spain. -->
+    More can be learned about the specific facts and things in that regard about Spain
+    <a href="https://kids.nationalgeographic.com/geography/countries/article/spain">Here</a>.
+    Also,
+    <a href="https://www.britannica.com/place/Spain">Here</a>.
+    <!-- This section is designed for stating my interest about a favorite site to tour which is
+      the Plaza Mayor in Madrid, Spain. -->
+    <h3> PLAZA MAYOR, MADRID </h3>
+    <p>
+        As I learned about the country of Spain, I really had the interest to explore and tour Plaza
+        Mayor because of its history and wanted to learn more about the architecture of the buildings
+        at the plaza since I know that the architecture of the buildings are from the Renaissance
+        period and I thought that was amazing!
+    </p>
+    <!-- Adding a link to the image of the Plaza Mayor. -->
+    <ul>
+        <li><a href= {{ url_for('static', filename='images/plaza_mayor_madrid.jpg') }}>
+            Plaza Mayor
+        </a></li>
+    <!-- This section is designed for stating my interest about another favorite site to tour which 
+      is the La rambla in Barcelona, Spain. -->
+    </ul>
+    <h3> LA RAMBLA, BARCELONA </h3>
+    <p>
+        I am interested as well to tour the La Rambla in Spain and I am interested because of
+        the fact that La Rambla gathers five streets in one which includes Canaletas, Estudios,
+        San José, Capuchinos and Santa Mónica
+    </p>
+    <!-- Adding a link to the image of the La rambla. -->
+    <ul>
+        <li><a href= {{ url_for('static', filename='images/la_rambla_barcelona.jpeg') }}>
+            La Rambla
+        </a></li>
+    </ul>
+
+    <!-- Adding a link to the external website to learn more about the different places a person
+      could explore in Spain. -->
+    More can be learned about the different places to explore within the country of Spain 
+    <a href="https://www.planetware.com/tourist-attractions/spain-e.htm">Here</a>.
+</div>

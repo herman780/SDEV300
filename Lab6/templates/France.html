@@ -1,0 +1,74 @@
+<!-- This is the France.html webpage which will be used for presenting the content/information 
+about the country of France. -->
+<div class="container">
+  <style>
+        div {
+            background-color: lightskyblue;
+        }
+  </style>
+  <!-- This will be the area to display the France flag picture and along that the entirety of the
+    country of France picture, etc... -->
+    <h1> <img src="https://cdn.travelpulse.com/images/faa9edf4-a957-df11-b491-006073e71405/c0594e9a-dd27-41b9-b02b-0c0362deadce/630x355.jpg"
+          alt="Picture of France" width="400" height="200">
+         <img src="https://t3.ftcdn.net/jpg/03/55/52/62/360_F_355526266_AeDFeyQ5l0Q26kWR8Kx5emnd7sNWyjGy.jpg"
+          alt="Welcome to France page" align="bottom" width="430" height="200">
+         <img src="https://media.istockphoto.com/photos/flag-of-france-picture-id172301500?k=20&m=172301500&s=612x612&w=0&h=4RQWgaixj-gal1cb2YDlU66lb1wmwv75TYcGK0SLLjI="
+          alt="Flag Picture of France" align="right" width="400" height="200">
+         <br>FRANCE</br>
+    <!-- This section will be for displaying the factual information and other stuff about the
+      country of France -->
+    </h1>
+    <h2>Some information about the country of France!</h2>
+    <p>
+        France is a country of Northwestern Europe and it is considered historically and culturally
+        wise to be the most important nations in the entirety of the Western world. The country of
+        France is bordered by the Atlantic Ocean and the Mediterranean Sea, and the Alps and Pyrenees.
+        It is Europe's most crucial and important agricultural producer of a lot of agricultural
+        resources and is one of the world's leading industrial powers.
+    </p>
+
+    <!-- A link to an external web site which would allow the user to learn more facts about the
+      country of France -->
+    More can be learned about the specific facts and things in that regard about France
+    <a href="https://www.britannica.com/place/France">Here</a>.
+    <!-- Discussing my interest of the Eiffel Tower in Paris and later on including the link 
+      to the Eiffel Tower in France picture -->
+    <p>
+        I have always wanted to tour and explore the country of France, and wanted to visit the Eiffel
+        Tower in Paris, France.
+    </p>
+    <ul>
+        <li><a href= {{ url_for('static', filename='images/eiffel-tower_paris.jpg') }}>Eiffel Tower</a></li>
+    </ul>
+    <!-- This will be for the section of the top 3 places to explore within the country of France.
+      Later on, including the images of the top 3 places to explore in France. -->
+    <header>
+        <h2> The top 3 places to explore and tour in France! </h2>
+           <ol>
+               <li><a href= {{ url_for('static', filename='images/picture_of_paris.jpg') }}>
+                Paris</a></li>
+               <li><a href= {{ url_for('static', filename='images/Loire Valley_france.jpg') }}>
+                Loire Valley
+               </a></li>
+               <li><a href= {{ url_for('static', filename='images/Marseille_france.jpg') }}>
+                Marseille
+               </a></li>
+           </ol>
+    <!-- This is another section to discuss about another interest I have when I explore 
+      France, and that is touring the Louvre Museum (landmark in France). -->
+    </header>
+    <h3> LOUVRE MUSEUM </h3>
+    <p> 
+        I am interested in visiting the Musée du Louvre aka the Louvre Museum, and getting to learn about
+        the museum and its creation and its history. 
+    </p>
+    <!-- Including the link to the Louvre Museum picture. -->
+    <ul>
+        <li><a href= {{ url_for('static', filename='images/louvre_museum.jpg') }}>Louvre Museum</a></li>
+    </ul>
+
+    <!-- Adding a link to an external web site to learn more about the different places to
+      tour in France. -->
+    More can be learned about the different places to explore within the country of France
+    <a href="https://www.planetware.com/tourist-attractions/france-f.htm">Here</a>.
+</div>

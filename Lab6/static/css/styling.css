@@ -1,0 +1,50 @@
+/* This is the style sheet designed with CSS that is used by all Web pages. */
+* {
+    box-sizing: border-box;
+ }
+ /* This is for styling the header across all webpages using the header feature */
+ .header {
+     padding: 200px;
+     text-align:center;
+     background: burlywood;
+     color: black;
+ }
+ /* This is used for styling each of the buttons on the webpage(s). */
+ .button {
+     display: inline-block;
+     font-weight: bold;
+     font-size: 20px;
+     padding: 14px 20px;
+     text-align: left;
+     text-decoration: none;
+     color: black;
+     background-color: white;
+     border-radius: 4px;
+     outline: none;
+ }
+ /* This is used for styling the header style <h1> across all webpages */
+ h1 {
+     color:black;
+     font-family: sans-serif;
+ }
+ /* This is used for styling the header style <h2> across all webpages */
+ h2 {
+     color: black;
+     font-family: sans-serif;
+ }
+ h3 {
+     color: black;
+     font-family: sans-serif;
+ }
+ /* This is used for styling the title */
+ .title {
+     color: red;
+     text-align: center;
+ }
+ /* This is used for styling the containers across all the webpages. */
+ .container {
+     width: 70%;
+     margin: auto;
+     padding: 2%;
+     border-radius: 4%
+ }

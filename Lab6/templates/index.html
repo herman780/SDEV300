@@ -1,0 +1,42 @@
+<!-- This is the index.html webpage which is the first page upon user entering the website. -->
+<!DOCTYPE html>
+<!-- This is for making sure the language used for the webpages are in standard English. -->
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta content="width=device-width, initial-scale=1" name="viewport">
+       <!-- Title of the index/first webpage upon user entry to website -->
+       <title>Travelling different countries!</title>
+       <!-- Referencing the CSS stylesheet as created to be used across all webpages -->
+       <link href="../static/css/styling.css" rel="stylesheet" type="text/css">
+   </head>
+  <body>
+    <!-- Looping to display the current date and time on the webpage. -->
+    {% for y in content %}
+    <h3 style="text-align:right"> Current Timestamp: {{ y }}</h3>
+    {% endfor %}
+    <header>
+      <nav>
+        <ul>
+          <a class="button" href="/">Home</a>
+          <a class="button" href="France">France</a>
+          <a class="button" href="Spain">Spain</a>
+          <a class="button" href="Germany">Germany</a>
+        </ul>
+      </nav>
+    </header>
+   <!--This is the main header of the index webpage and below is a paragraph introducing the 
+    content that will be produced by summarizing it all up. -->
+   <div class="header">
+     <h1> An informational website about the different countries I would love to travel and explore! </h1>
+     <p> This is a <b>user responsive</b> website about different countries created by Herman Mann.</p>
+     <p>
+       I have always loved traveling around different places in the United States, but have never gotten
+       a chance to travel to any european countries but I have been having the long desire to do so. I want
+       to travel to these countries as described on this website Germany, Spain, and France 
+       and taking 1-2 years to finish traveling so I can explore each of these countries in great
+       exploration. 
+     </p>
+   </div>
+  </body>
+</html>
