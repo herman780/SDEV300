@@ -1,0 +1,166 @@
+<!-- This is the table.html webpage/route used for creating the rows and columns and then
+adding the accompanying content on the table as choosed. -->
+<!-- Contains more than 4 rows and 3 columns as requirement -->
+{% extends "foundation.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<!-- This section is used for creating the appropriate rows and columns of the table. -->
+<div style = "text-align:center;">
+    {% for y in content %}
+    <h3 style="text-align:right"> Current Timestamp: {{ y }}</h3>
+    {% endfor %}
+    <h2>Lets talk about the NBA PLAYOFFS!</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Current NBA Teams in Playoffs</th>
+            <th>Top famous teams who made playoffs in past</th>
+            <th>Famous NBA Athletes</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/warriors/">
+                Golden State Warriors
+                </a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/1995%E2%80%9396_Chicago_Bulls_season">
+                1996 Chicago Bulls
+                </a>
+                
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/j/jordami01.html">
+                Michael Jordan
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/suns/">
+                Phoenix Suns
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/PHI/1983.html">
+                1982-83 Philadelphia 76ers
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/e/ervinju01.html">
+                Julius Erving
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.mavs.com/">
+                Dallas Mavericks
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/MIL/1971.html">
+                1970-71 Milwaukee Bucks
+                </a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Kareem_Abdul-Jabbar">
+                Kareem Abdul-Jabbar
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/heat/home">
+                Miami Heat
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/DET/1989.html">
+                1988-89 Detroit Pistons
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/h/hillgr01.html">
+                Grant Hill
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/sixers/">
+                Philadelphia 76ers
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/BOS/1965.html">
+                1964-65 Boston Celtics
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/p/piercpa01.html">
+                Paul Pierce
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/grizzlies/">
+                Memphis Grizzlies
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/HOU/1994.html">
+                1993-94 Houston Rockets
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/o/olajuha01.html">
+                Hakeem Olajuwon
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/celtics/">
+                Boston Celtics
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/MIA/2006.html">
+                2005-06 Miami Heat
+                </a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Dwyane_Wade">
+                Dwayne Wade
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.nba.com/bucks">
+                Milwaukee Bucks
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/teams/SAS/2003.html">
+                2002-03 San Antonio Spurs
+                </a>
+            </td>
+            <td>
+                <a href="https://www.basketball-reference.com/players/d/duncati01.html">
+                Tim Duncan
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<img src="/static/images/nba-playoffs.jpg" alt="NBA Playoffs 2021-2022" 
+ width="1245" height="400" align="right">
+{% endblock %}
